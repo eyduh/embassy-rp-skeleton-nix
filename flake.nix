@@ -20,11 +20,12 @@
         devShells.default = mkShell {
           buildInputs = [
             probe-rs
+            flip-link
             (rust-bin.fromRustupToolchainFile ./rust-toolchain.toml)
           ];
 
           shellHook = ''
-            source .nix-shell-history.sh
+            source .nix-shell-history-hook.sh
             alias flash="cargo flash --chip RP2040"
           '';
         };
