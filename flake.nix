@@ -1,5 +1,5 @@
 {
-  description = "test";
+  description = "Flake for the rp2040 on rust";
 
   inputs = {
     nixpkgs.url      = "github:NixOS/nixpkgs/nixos-unstable";
@@ -25,7 +25,6 @@
           ];
 
           shellHook = ''
-            source .nix-shell-history-hook.sh
             alias flash="cargo flash --chip RP2040"
           '';
         };
