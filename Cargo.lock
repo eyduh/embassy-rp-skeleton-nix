@@ -394,7 +394,7 @@ dependencies = [
 
 [[package]]
 name = "embassy-rp-skeleton"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "cortex-m",
  "cortex-m-rt",
@@ -402,6 +402,7 @@ dependencies = [
  "defmt-rtt",
  "embassy-executor",
  "embassy-rp",
+ "embassy-sync",
  "embassy-time",
  "panic-probe",
 ]
@@ -414,6 +415,7 @@ checksum = "dd938f25c0798db4280fcd8026bf4c2f48789aebf8f77b6e5cf8a7693ba114ec"
 dependencies = [
  "cfg-if",
  "critical-section",
+ "defmt",
  "embedded-io-async",
  "futures-util",
  "heapless",

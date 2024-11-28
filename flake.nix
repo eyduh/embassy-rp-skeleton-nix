@@ -25,7 +25,7 @@
           ];
 
           shellHook = ''
-            alias flash="cargo flash --chip RP2040"
+            alias flash="sudo cargo flash --chip RP2040"
           '';
         };
       }
